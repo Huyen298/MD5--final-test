@@ -1,0 +1,14 @@
+<h1>Xóa</h1>
+<form [formGroup]="bookForm" (ngSubmit)="delete()" >
+  <table>
+    <tr>
+      <td>Title :</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xoá</button></td>
+      <td><button><a routerLink="/books">Quay lại danh sách</a></button></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,22 @@
+<h1>Thêm sách mới</h1>
+<a routerLink="/books/list">Danh sách</a>
+<br>
+<br>
+
+<form [formGroup]="bookForm" (ngSubmit)="createBook()">
+  <div>
+    <label for="title">Title </label>
+    <input type="text" id="title" formControlName="title" >
+  </div>
+  <div>
+    <label for="author">Author</label>
+    <input type="text" id="author" formControlName="author">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <input type="text" id="description" formControlName="description" >
+  </div>
+  <div>
+    <button>Tạo mới</button>
+  </div>
+</form>
